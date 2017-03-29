@@ -1,0 +1,34 @@
+$b = "menu"
+
+.{$b}
+  display: block
+  width: 100%
+  background-color: #fff
+  position: fixed
+  top: 0
+  left: 0
+  border-bottom: 1px solid #eee
+  padding: 20px 0
+
+.{$b}_logo
+  font-family: ProximaNovaBold, sans-serif
+  font-size: 35px
+  color: #000
+  transition: color 0.5s
+
+  &:hover
+    color: #6fafff
+
+.{$b}_admin
+  display: block
+  position: absolute
+  right: 0
+  top: 0
+  font-size: 20px
+  padding: 29px 35px 30px 35px
+  color: #fff
+  background-color: #6fafff
+  transition: background-color 0.5s
+
+  &:hover
+    background-color: #348eff

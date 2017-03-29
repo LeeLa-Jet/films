@@ -1,0 +1,42 @@
+$b = "home"
+
+.{$b}
+  display: block
+  margin-top: 83px
+
+.{$b}_headline
+  display: block
+  width: 100%
+  position: relative
+  height: 650px
+
+.{$b}_headline-bg
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background-size: cover
+  background-position: center
+
+  &:after
+    content: ''
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,0.4)
+
+.{$b}_headline-search
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 2
+  color: #fff
+
+.{$b}_headline-search-text
+  font-size: 30px
+  font-family: ProximaNovaSemibold
+  padding-bottom: 30px
