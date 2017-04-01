@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ListItem extends Component {
 
@@ -12,6 +13,7 @@ class ListItem extends Component {
     };
     return (
       <div className="list_item">
+        <Link to={{ pathname: `/${this.props.item.id}` }} className="list_item-link"></Link>
         <div className="list_item-bg" style={bgStyle}></div>
         <div className="list_item-info">
           <p className="list_item-title">{this.props.item.title}</p>
